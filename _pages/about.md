@@ -20,4 +20,4 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-Hi there! I am currently a Computer Science major at [Georgia Tech](http://gatech.edu) in the BSMS program. My concentrations are [Intelligence](https://www.cc.gatech.edu/academics/threads/intelligence) and [Theory](https://www.cc.gatech.edu/academics/threads/theory).
+Hi there! I am currently a Computer Science major at [Georgia Tech](http://gatech.edu) in the BSMS program. My concentrations are [Intelligence](https://www.cc.gatech.edu/academics/threads/intelligence) and [Theory](https://www.cc.gatech.edu/academics/threads/theory). Similarly I pursue research in Machine Learning, specifically at the intersection of representation learning in Computational Biology.
