@@ -238,7 +238,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -259,15 +259,16 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  background-color: var(--global-theme-color);
   font-size: 0.75rem;
   .container {
+    text-align: center;
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
   }
   a {
-    color: var(--global-footer-link-color);
+    color: var(--global-footer-text-color);
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
