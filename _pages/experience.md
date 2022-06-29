@@ -83,7 +83,7 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content left">
-			<h2>BS in Computer Science</h2>
+			<h2>BS/MS in Computer Science</h2>
             <br/>
             <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp; Georgia Institute of Technology, GA</em> </p>
 			<p>
@@ -94,7 +94,7 @@ horizontal: false
                 <li>M.S. in ML complete May 2024</li>
                 </ul>
 			</p>
-            <p><i class='fas fa-calendar'/> &nbsp; <em>Aug 2020 - May 2023 (Projected)</em></p>
+            <p><i class='fas fa-calendar'/> &nbsp; <em>Aug 2020 - May 2023 (Graduation)</em></p>
 			<!-- <a href="#" class="btn">button</a> -->
         </div>
 	</div>

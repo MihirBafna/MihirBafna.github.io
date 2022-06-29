@@ -1,19 +1,18 @@
 ---
 layout: default
 ---
-
 <!-- about.html -->
       <div class="post">
+        
         <header class="post-header">
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
-
         <article>
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          <div class="profile float-right">
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
               {% include figure.html 
@@ -27,6 +26,39 @@ layout: default
             </div>
             {%- endif %}
           </div>
+            <div class="loader float-right" >
+              <div class="dot dot1"><i></i></div>
+              <div class="dot dot2"><i></i></div>
+              <div class="dot dot3"><i></i></div>
+              <div class="dot dot4"><i></i></div>
+              <div class="dot dot5"><i></i></div>
+              <div class="dot dot6"><i></i></div>
+              <div class="dot dot7"><i></i></div>
+              <div class="dot dot8"><i></i></div>
+              <div class="dot dot9"><i></i></div>
+              <div class="dot dot10"><i></i></div>
+              <div class="dot dot11"><i></i></div>
+              <div class="dot dot12"><i></i></div>
+              <div class="dot dot13"><i></i></div>
+              <div class="dot dot14"><i></i></div>
+              <div class="dot dot15"><i></i></div>
+              <div class="dot dot16"><i></i></div>
+              <div class="dot dot17"><i></i></div>
+              <div class="dot dot18"><i></i></div>
+              <div class="dot dot19"><i></i></div>
+              <div class="dot dot20"><i></i></div>
+              <div class="dot dot22"><i></i></div>
+              <div class="dot dot23"><i></i></div>
+              <div class="dot dot24"><i></i></div>
+              <div class="dot dot25"><i></i></div>
+              <div class="dot dot26"><i></i></div>
+              <div class="dot dot27"><i></i></div>
+              <div class="dot dot28"><i></i></div>
+              <div class="dot dot29"><i></i></div>
+              <div class="dot dot30"><i></i></div>
+              <div class="dot dot21"><i></i></div>
+            </div>
+
           {%- endif %}
 
           <div class="clearfix">
@@ -57,4 +89,5 @@ layout: default
           {%- endif %}
         </article>
 
-</div>
+  </div>
+    </div>
