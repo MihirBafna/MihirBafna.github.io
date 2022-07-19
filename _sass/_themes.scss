@@ -17,6 +17,8 @@
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
   --global-card-text-color: #{$grey-color-dark};
+  --global-computer-inner-color: #{$white-color};
+  --global-computer-outer-color: #{$grey-color};
 
   .fa-sun {
     display : none;
@@ -42,6 +44,8 @@ html[data-theme='dark'] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
+  --global-computer-inner-color: #37474F;
+  --global-computer-outer-color: #546E7A;
 
   .fa-sun {
     padding-left: 10px;
