@@ -23,9 +23,9 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content right">
-			<h2>CompBio Intern | Ma Lab</h2>
+			<h2><img src="../assets/img/cmu.png" width="50vw" height="50vh">  CompBio Intern @ Jian Ma Lab </h2>
             <br/>
-            <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Carnegie Mellon University, PA </em> </p>
+			<p><i class='fas fa-id-badge'></i> &nbsp;CompBio Paid Intern </p>
 			<p>
                 <ul>
                 <li>Using Hypergraph GNNs to predict trigenic interactions in the yeast genome, specifically those with protein structural significance</li>
@@ -33,6 +33,7 @@ horizontal: false
                 </ul>
 			</p>
             <p><i class='fas fa-calendar'/> &nbsp; <em>Dec 2021 - Present</em></p>
+			<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Carnegie Mellon University, PA </em> </p>
 			<!-- <a href="#" class="btn">button</a> -->
 		</div>
 	</div>
@@ -43,16 +44,19 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content left">
-			<h2>CompBio Researcher | Zhang Lab</h2>
+			<h2>  <img src="../assets/img/gt.png" width="45vw" height="45vh"> Researcher @ Xiuwei Zhang Lab</h2>
             <br/>
-            <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Georgia Institute of Technology, GA </em> </p>
+			<p><i class='fas fa-id-badge'></i> &nbsp;CompBio Student Researcher </p>
 			<p>
                 <ul>
                 <li>Understanding extracellular interactions (cell-cell inference, subnetwork comparison) with and Spatial Transcriptomics data</li>
                 <li>Writing a benchmarking paper on current Spatial Transcriptomics + CCI methods</li>
                 </ul>
 			</p>
-            <p><i class='fas fa-calendar'/> &nbsp; <em>Nov 2021 - Present</em></p>
+			<div>
+			<p><i class='fas fa-calendar'/> &nbsp; <em>Nov 2021 - Present</em></p>
+			<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Georgia Institute of Technology, GA </em> </p>
+			</div>
 			<!-- <a href="#" class="btn">button</a> -->
         </div>
 	</div>
@@ -63,9 +67,9 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content right">
-			<h2>Bioinformatics Intern | Boundless Bio</h2>
+			<h2><img src="../assets/img/ppi_trans.png" width="50vw" height="50vh">&nbsp; Bioinf. Intern @ Boundless Bio</h2>
             <br/>
-            <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;San Diego, CA </em> </p>
+			<p><i class='fas fa-id-badge'></i> &nbsp;Paid Bioinformatics Research Intern </p>
 			<p>
                 <ul>
                 <li>Provisional patent for creating metaDetect: a computer vision algorithm for identifying metaphase spreads in stained WSI of cancer cells using image filtering techniques</li>
@@ -73,6 +77,7 @@ horizontal: false
                 </ul>
 			</p>
             <p><i class='fas fa-calendar'/> &nbsp; <em>Aug 2020 - Dec 2021</em></p>
+			<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;San Diego, CA </em> </p>
 			<!-- <a href="#" class="btn">button</a> -->
         </div>
 	</div>
@@ -83,7 +88,7 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content left">
-			<h2>BS/MS in Computer Science</h2>
+			<h2><img src="../assets/img/gt.png" width="45vw" height="45vh">&nbsp; BS/MS in Computer Science</h2>
             <br/>
             <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp; Georgia Institute of Technology, GA</em> </p>
 			<p>
@@ -94,7 +99,7 @@ horizontal: false
                 <li>M.S. in ML complete May 2024</li>
                 </ul>
 			</p>
-            <p><i class='fas fa-calendar'/> &nbsp; <em>Aug 2020 - May 2023 (Graduation)</em></p>
+            <p><i class='fas fa-calendar'/> &nbsp; <em>Aug 2020 - May 2023 </em>(<i class='fas fa-graduation-cap'></i>)</p>	
 			<!-- <a href="#" class="btn">button</a> -->
         </div>
 	</div>
