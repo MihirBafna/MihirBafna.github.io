@@ -44,7 +44,7 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content left">
-			<h2>  <img src="../assets/img/gt.png" width="45vw" height="45vh"> Researcher @ Xiuwei Zhang Lab</h2>
+			<h2> <img src="../assets/img/gt.jpeg" width="43vw" height="40vh"> Researcher @ Xiuwei Zhang Lab</h2>
             <br/>
 			<p><i class='fas fa-id-badge'></i> &nbsp;CompBio Student Researcher </p>
 			<p>
@@ -88,7 +88,7 @@ horizontal: false
 		</div>
 		<!-- Content from timeline box and position (right or left)-->
 		<div class="timeline-content left">
-			<h2><img src="../assets/img/gt.png" width="45vw" height="45vh">&nbsp; BS/MS in Computer Science</h2>
+			<h2><img src="../assets/img/gt.jpeg" width="48vw" height="45vh">&nbsp; BS/MS in Computer Science</h2>
             <br/>
             <p><i class='fas fa-map-marker-alt'></i> <em>&nbsp; Georgia Institute of Technology, GA</em> </p>
 			<p>

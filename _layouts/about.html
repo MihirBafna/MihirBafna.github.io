@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- about.html -->
       <div class="post">
-        
+
         <header class="post-header">
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
@@ -28,7 +28,7 @@ layout: default
           </div> -->
           <div class="profile float-right" style="height:50vh; width:20vw;">
               <div class="computer-container">
-                <div class="computer-monitor">
+                <div class="computer-monitor" onclick="window.open('/terminal/', '_self')">
                   <div class="loader" style="z-index: 4; padding-top:15vh; padding-left:2vw;">
                     <div class="dot dot1"><i></i></div>
                     <div class="dot dot2"><i></i></div>

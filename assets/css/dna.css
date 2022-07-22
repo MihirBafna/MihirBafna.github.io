@@ -165,7 +165,7 @@
 	position: relative;
 	height: 245px;
 	width: 373px;
-	box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px, 20px rgba(0,0,0,1);
 	/* background-color: #37474F;
 	border: 15px solid #546E7A; */
 	background-color: var(--global-computer-inner-color);
@@ -173,6 +173,14 @@
 	border-top-right-radius: 2rem;
 	border-top-left-radius: 2rem;
 }
+
+
+.computer-monitor:hover {
+	-webkit-box-shadow: 0 0 40px var(--global-theme-color);
+	box-shadow: 0 0 40px var(--global-theme-color);
+}
+
+
 .computer-bottom {
 	position: relative;
 	z-index: 1;
