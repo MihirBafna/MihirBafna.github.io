@@ -18,10 +18,9 @@
 
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   padding: 20px;
-  background-color: #383838;
 
 }
 
@@ -35,22 +34,22 @@ body {
 }
 
 p {
-  color: rgb(136, 146, 176);
+  color: rgb(136, 146, 176) !important;
 }
 
 .main_window {
   box-shadow: 10px 10px 10px black;
-
 }
 
 .terminal-window {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-
   height: 100vh;
   padding: 0.5em 0em 0em 0.5em;
   display: flex;
   flex-direction: column;
+  background-color: var(--global-computer-inner-color)
+
 }
 
 .terminal-bar-text {
@@ -82,18 +81,18 @@ p {
   position: relative;
   font-family: "Anonymous Pro", monospace;
   font-size: 0.9em;
-  color: #5d656b;
+  color: var(--global-text-color);
   margin-top: 5px;
 }
 
 .directory {
-  color: #75e1e7;
+  color: var(--global-theme-color);
   font-weight: 500;
 }
 
 
 .success {
-  color: #8dd39e;
+  color: var(--global-theme-color);
 }
 .link {
   color: var(--global-theme-color);
@@ -116,7 +115,7 @@ p {
 .code,
 .error,
 .fa-heart {
-  color: #d7566a;
+  color: var(--global-theme-color);
 }
 
 .dummy-keyboard {
@@ -200,9 +199,8 @@ p {
   padding: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-
-  background: #f0f0f3;
-  box-shadow: -10px -10px 30px white, 10px 10px 30px rgba(174, 174, 192, 0.4);
+  background-color: var(--global-computer-inner-color);
+  box-shadow: -10px -10px 30px gray, 10px 10px 30px gray;
 }
 
 :root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #6c6c6c; --global-text-color-light: #828282; --global-theme-color: #f92080; --global-theme-color-light: #ffdddd; --global-hover-color: #f92080; --global-footer-bg-color: #383838; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; --global-divider-color: rgba(0,0,0,.1); --global-card-bg-color: #ffffff; --global-card-text-color: #383838; --global-computer-inner-color: #ffffff; --global-computer-outer-color: #828282; }

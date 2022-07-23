@@ -79,9 +79,15 @@
                   {%- endif -%}
                 </a>
               </li>
+              
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              <li class="nav-item {% if page.permalink == '/terminal/' %}active{% endif %}">
+                <a class="nav-link" href="/terminal">
+                    <i class="fas fa-desktop"></i>
+                </a>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
@@ -92,6 +98,7 @@
                 </a>
               </div>
               {%- endif %}
+
             </ul>
           </div>
         </div>
