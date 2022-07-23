@@ -161,6 +161,7 @@
 .computer-container {
 	position: absolute;
 }
+
 .computer-monitor {
 	position: relative;
 	height: 245px;
@@ -175,9 +176,10 @@
 }
 
 
-.computer-monitor:hover {
+.computer-monitor:hover{
 	-webkit-box-shadow: 0 0 40px var(--global-theme-color);
 	box-shadow: 0 0 40px var(--global-theme-color);
+	cursor: pointer;
 }
 
 
@@ -192,6 +194,8 @@
 	height: 20px;
 	background-color: #eeeeee;
 }
+
+
 .computer-stand {
 	box-shadow: 5px 5px 11px rgba(0,0,0,0.3);
 	position: relative;
@@ -202,6 +206,7 @@
 	background-color: #eeeeee;
 	clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
 }
+
 .computer-stand-bottom {
 	box-shadow: 5px 5px 11px rgba(0,0,0,0.3);
 	margin: 0 auto;

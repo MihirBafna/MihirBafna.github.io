@@ -1,3 +1,5 @@
+
+
 * {
   padding: 0;
   margin: 0;
@@ -94,10 +96,10 @@ p {
   color: #8dd39e;
 }
 .link {
-  color: #21ff80;
+  color: var(--global-theme-color);
 }
 .help {
-  color: #e55025;
+  color: var(--global-theme-color);
   /* e6945e */
 }
 .skills {
@@ -105,10 +107,10 @@ p {
 }
 
 .aboutHead {
-  color: #4b40e0;
+  color: var(--global-theme-color);
 }
 .aboutTail {
-  color: #00d742;
+  color: var(--global-theme-color);
 }
 
 .code,
@@ -135,7 +137,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   opacity: 0.9;
-  border-right: 7px solid rgb(122, 142, 255);
+  border-right: 7px solid var(--global-theme-color);
 }
 
 @keyframes blinkTextCursor {
@@ -162,6 +164,7 @@ p {
 
 .fakeClose:hover{
   background-color: rgb(255, 140, 140);
+  cursor: pointer;
 }
 
 .fakeMinimize {
@@ -180,7 +183,7 @@ p {
   width: 550px;
   box-sizing: border-box;
   height: 25px;
-  background-color: #f0f0f3;
+  background-color: gray;
   margin: 0 auto;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -199,5 +202,17 @@ p {
   border-bottom-right-radius: 5px;
 
   background: #f0f0f3;
-  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+  box-shadow: -10px -10px 30px white, 10px 10px 30px rgba(174, 174, 192, 0.4);
 }
+
+:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #6c6c6c; --global-text-color-light: #828282; --global-theme-color: #f92080; --global-theme-color-light: #ffdddd; --global-hover-color: #f92080; --global-footer-bg-color: #383838; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; --global-divider-color: rgba(0,0,0,.1); --global-card-bg-color: #ffffff; --global-card-text-color: #383838; --global-computer-inner-color: #ffffff; --global-computer-outer-color: #828282; }
+
+:root .fa-sun { display: none; }
+
+:root .fa-moon { padding-left: 10px; padding-top: 12px; display: block; }
+
+html[data-theme='dark'] { --global-bg-color: #383838; --global-code-bg-color: #2c3237; --global-text-color: #e8e8e8; --global-text-color-light: #e8e8e8; --global-theme-color: #2698BA; --global-theme-color-light: #7bcce4; --global-hover-color: #2698BA; --global-footer-bg-color: #e8e8e8; --global-footer-text-color: #ffffff; --global-footer-link-color: #6c6c6c; --global-distill-app-color: #e8e8e8; --global-divider-color: #424246; --global-card-bg-color: #212529; --global-computer-inner-color: #37474F; --global-computer-outer-color: #546E7A; }
+
+html[data-theme='dark'] .fa-sun { padding-left: 10px; padding-top: 12px; display: block; }
+
+html[data-theme='dark'] .fa-moon { display: none; }
