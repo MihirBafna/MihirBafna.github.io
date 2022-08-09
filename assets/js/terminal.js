@@ -5,11 +5,13 @@ let lastCommands = [];
 
 const COMMANDS = {
   ls:
-    "about&nbsp;&nbsp;&nbsp;&nbsp;experience&nbsp;&nbsp;&nbsp;&nbsp;publications&nbsp;&nbsp;&nbsp;&nbsp;projects",
+    "about&nbsp;&nbsp;&nbsp;&nbsp;experience&nbsp;&nbsp;&nbsp;&nbsp;publications&nbsp;&nbsp;&nbsp;&nbsp;repositories&nbsp;&nbsp;&nbsp;&nbsp;cv",
   cd: "changed directory to root..",
   "cd about": "Opening Mihir's 'About' section...",
   "cd publications": "Opening Mihir's 'Publications' section...",
   "cd experience": "Opening Mihir's 'Experience' section...",
+  "cd cv": "Opening Mihir's 'cv' section...",
+  "cd repositories": "Opening Mihir's 'repositories' section...",
   "exit": "Exiting terminal...",
 
   "cd ..": "cd: no such file or directory",
@@ -54,8 +56,17 @@ const execute = function executeCommand(input) {
     setTimeout(function() {
       open("/publications/","_self");
     }, delay);
-  }
-  else if (input === "clear" || input === "cls") {
+  } else if (input == "cd cv") {
+    printout(input)
+    setTimeout(function() {
+      open("/cv/","_self");
+    }, delay);
+  } else if (input == "cd repositories") {
+    printout(input)
+    setTimeout(function() {
+      open("/repositories/","_self");
+    }, delay);
+  } else if (input === "clear" || input === "cls") {
     clearScreen();
   } else if (input === "history") {
     showHist();

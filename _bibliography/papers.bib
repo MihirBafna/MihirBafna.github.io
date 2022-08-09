@@ -3,24 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{DeepViFi,
-  abbr={DeepVifi},
-  bibtex_show={true},
-  title={DeepViFi: Detecting Oncoviral Infections in Cancer Genomes using Transformers},
-  author={Rajkumar, U and Javadzadeh, S and Bafna, M and Wu, D and Yu, R and Bafna, V and Shang, J},
-  year={2022},
-  journal={ACM-BCB},
-  selected={true},
-  abstract={We consider the problem of identifying viral reads in human host genome data. When the viral
-family is highly diverged, sequence based methods have low sensitivity, and domain specific training
-is needed to recognize the viral reads. We show first that Deep convolutional neural networks, that
-model the problem as one of supervised classification, also have reduced sensitivity in this ‘open-set’
-testing scenario. Next, we present DeepViFi, which uses deep learning on a transformer architecture
-to learn high-dimensional representations of viral reads from short-read whole genome sequence data.
-At 90% precision, DeepViFi achieved 90% recall compared to 15% for other deep learning methods.
-Our results suggest that DeepViFi provides a framework for rapidly learning of representations from
-families without specific domain knowledge, a fast test for quickly and accurately identifying the
-target sequences in a larger data-set.}
+
+@inproceedings{DeepVifi,
+abbr={DeepVifi},
+bibtex_show={true},
+author = {Rajkumar, Utkrisht and Javadzadeh, Sara and Bafna, Mihir and Wu, Dongxia and Yu, Rose and Shang, Jingbo and Bafna, Vineet},
+title = {DeepViFi: Detecting Oncoviral Infections in Cancer Genomes Using Transformers},
+year = {2022},
+isbn = {9781450393867},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3535508.3545551},
+doi = {10.1145/3535508.3545551},
+abstract = {We consider the problem of identifying viral reads in human host genome data. We pose the problem as open-set classification as reads can originate from unknown sources such as bacterial and fungal genomes. Sequence-matching methods have low sensitivity in recognizing viral reads when the viral family is highly diverged. Hidden Markov models have higher sensitivity but require domain-specific training and are difficult to repurpose for identifying different viral families. Supervised learning methods can be trained with little domain-specific knowledge but have reduced sensitivity in open-set scenarios. We present DeepViFi, a transformer-based pipeline, to detect viral reads in short-read whole genome sequence data. At 90% precision, DeepViFi achieves 90% recall compared to 15% for other deep learning methods. DeepViFi provides a semi-supervised framework to learn representations of viral families without domain-specific knowledge, and rapidly and accurately identify target sequences in open-set settings.},
+booktitle = {Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics},
+articleno = {2},
+numpages = {8},
+keywords = {neural networks, viral detection, natural language processing, open-set classification},
+location = {Northbrook, Illinois},
+series = {BCB '22},
+selected= {true},
+pdf={https://dl.acm.org/doi/pdf/10.1145/3535508.3545551}
 }
 
 @misc{MetaDetect,
