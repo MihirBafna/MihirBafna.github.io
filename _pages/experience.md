@@ -94,7 +94,7 @@ horizontal: false
 			<p>
                 <ul>
                 <li>GPA - 4.0/4.0</li>
-                <li>Specializating in Machine Learning/Theory</li>
+                <li>Specializing in Machine Learning/Theory</li>
                 <li>B.S. complete May 2023</li>`
                 <li>M.S. in ML complete May 2024</li>
                 </ul>
