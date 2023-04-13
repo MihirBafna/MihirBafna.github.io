@@ -71,16 +71,6 @@ layout: default
           <div class="clearfix" style=" width: 30vw; padding-top:2vh;">
             {{ content }}
           </div>
-          {%- endif %}
-
-          {% if page.news -%}
-          <!-- News -->
-          {%- include news.html %}
-          {%- endif %}
-          {% if page.selected_papers -%}
-            <!-- Selected papers -->
-            {%- include selected_papers.html %}
-          {%- endif %}
           {%- if page.social %}
           <!-- Social -->
           <h2>   </h2>
@@ -94,6 +84,15 @@ layout: default
             </div>
             
           </div>
+          {%- endif %}
+          {%- endif %}
+          {% if page.news -%}
+          <!-- News -->
+          {%- include news.html %}
+          {%- endif %}
+          {% if page.selected_papers -%}
+            <!-- Selected papers -->
+            {%- include selected_papers.html %}
           {%- endif %}
         </article>
 

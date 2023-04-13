@@ -4,7 +4,7 @@ title: experience
 permalink: /experience/
 description: 
 nav: true
-nav_order: 1
+nav_order: 2
 _styles: ../assets/css/timeline.css
 # display_categories: [work, fun]
 horizontal: false
