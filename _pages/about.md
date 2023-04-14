@@ -24,4 +24,4 @@ I am a Computer Science major at [Georgia Tech](http://gatech.edu) in the BSMS p
 
 My research interests lie at the intersection of [machine learning](), [structural biology](), and [drug discovery](), specifically with generative modeling. In past projects, I focused on applying graph representation learning techniques (GNNs) to investigate cell and gene regulatory interactions from single cell and spatial transcriptomics data.
 
-I am fortunate to have been advised by Dr. [Xiuwei Zhang](https://xiuweizhang.wordpress.com/) at Georgia Tech and Dr. [Jian Ma](https://www.cs.cmu.edu/~jianma/) at CMU.
+I am fortunate to have been advised by Dr. [Xiuwei Zhang](https://xiuweizhang.wordpress.com/) at Georgia Tech and Dr. [Jian Ma](https://www.cs.cmu.edu/~jianma/) / [Ruochi Zhang](https://ruochiz.com/) at CMU.

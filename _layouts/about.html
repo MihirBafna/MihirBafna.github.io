@@ -9,7 +9,9 @@ layout: default
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
+          
         </header>
+
         <article>
           <!-- {% if page.profile -%}
           <div class="profile float-left" style="border: 1px solid black;">
@@ -29,37 +31,40 @@ layout: default
           <div class="profile float-right" style="height:50vh; width:20vw;">
               <div class="computer-container">
                 <div class="computer-monitor" onclick="window.open('/terminal/', '_self')">
-                  <div class="loader" style="z-index: 4; padding-top:15vh; padding-left:2vw;">
-                    <div class="dot dot1"><i></i></div>
-                    <div class="dot dot2"><i></i></div>
-                    <div class="dot dot3"><i></i></div>
-                    <div class="dot dot4"><i></i></div>
-                    <div class="dot dot5"><i></i></div>
-                    <div class="dot dot6"><i></i></div>
-                    <div class="dot dot7"><i></i></div>
-                    <div class="dot dot8"><i></i></div>
-                    <div class="dot dot9"><i></i></div>
-                    <div class="dot dot10"><i></i></div>
-                    <div class="dot dot11"><i></i></div>
-                    <div class="dot dot12"><i></i></div>
-                    <div class="dot dot13"><i></i></div>
-                    <div class="dot dot14"><i></i></div>
-                    <div class="dot dot15"><i></i></div>
-                    <div class="dot dot16"><i></i></div>
-                    <div class="dot dot17"><i></i></div>
-                    <div class="dot dot18"><i></i></div>
-                    <div class="dot dot19"><i></i></div>
-                    <div class="dot dot20"><i></i></div>
-                    <div class="dot dot22"><i></i></div>
-                    <div class="dot dot23"><i></i></div>
-                    <div class="dot dot24"><i></i></div>
-                    <div class="dot dot25"><i></i></div>
-                    <div class="dot dot26"><i></i></div>
-                    <div class="dot dot27"><i></i></div>
-                    <div class="dot dot28"><i></i></div>
-                    <div class="dot dot29"><i></i></div>
-                    <div class="dot dot30"><i></i></div>
-                    <div class="dot dot21"><i></i></div>
+                  <!-- <div class="loader" style="z-index: 4; padding-top:15vh; padding-left:2vw;"> -->
+                  <div class="dna-container">
+                    <div class="loader" style="z-index: 4;">
+                      <!-- <div class="dot dot1"><i></i></div>
+                      <div class="dot dot2"><i></i></div>
+                      <div class="dot dot3"><i></i></div> -->
+                      <!-- <div class="dot dot4"><i></i></div> -->
+                      <!-- <div class="dot dot5"><i></i></div>
+                      <div class="dot dot6"><i></i></div>
+                      <div class="dot dot7"><i></i></div>
+                      <div class="dot dot8"><i></i></div>
+                      <div class="dot dot9"><i></i></div> -->
+                      <div class="dot dot10"><i></i></div>
+                      <div class="dot dot11"><i></i></div>
+                      <div class="dot dot12"><i></i></div>
+                      <div class="dot dot13"><i></i></div>
+                      <div class="dot dot14"><i></i></div>
+                      <div class="dot dot15"><i></i></div>
+                      <div class="dot dot16"><i></i></div>
+                      <div class="dot dot17"><i></i></div>
+                      <div class="dot dot18"><i></i></div>
+                      <div class="dot dot19"><i></i></div>
+                      <div class="dot dot20"><i></i></div>
+                      <div class="dot dot22"><i></i></div>
+                      <div class="dot dot23"><i></i></div>
+                      <div class="dot dot24"><i></i></div>
+                      <div class="dot dot25"><i></i></div>
+                      <div class="dot dot26"><i></i></div>
+                      <div class="dot dot27"><i></i></div>
+                      <div class="dot dot28"><i></i></div>
+                      <div class="dot dot29"><i></i></div>
+                      <div class="dot dot30"><i></i></div>
+                      <div class="dot dot21"><i></i></div>
+                    </div>
                   </div>
                 </div>
                 <div class="computer-bottom"></div>
@@ -71,6 +76,7 @@ layout: default
           <div class="clearfix" style=" width: 30vw; padding-top:2vh;">
             {{ content }}
           </div>
+          {%- endif %}
           {%- if page.social %}
           <!-- Social -->
           <h2>   </h2>
@@ -78,13 +84,12 @@ layout: default
             <div class="contact-icons">
             {% include social.html %}
             </div>
-
+  
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
             
           </div>
-          {%- endif %}
           {%- endif %}
           {% if page.news -%}
           <!-- News -->
