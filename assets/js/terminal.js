@@ -5,7 +5,7 @@ let lastCommands = [];
 
 const COMMANDS = {
   ls:
-    "about&nbsp;&nbsp;&nbsp;&nbsp;experience&nbsp;&nbsp;&nbsp;&nbsp;publications&nbsp;&nbsp;&nbsp;&nbsp;repositories&nbsp;&nbsp;&nbsp;&nbsp;cv",
+    "about&nbsp;&nbsp;&nbsp;&nbsp;experience&nbsp;&nbsp;&nbsp;&nbsp;publications&nbsp;&nbsp;&nbsp;&nbsp;cv",
   cd: "changed directory to root..",
   "cd about": "Opening Mihir's 'About' section...",
   "cd publications": "Opening Mihir's 'Publications' section...",
@@ -61,12 +61,14 @@ const execute = function executeCommand(input) {
     setTimeout(function() {
       open("/cv/","_self");
     }, delay);
-  } else if (input == "cd repositories") {
-    printout(input)
-    setTimeout(function() {
-      open("/repositories/","_self");
-    }, delay);
-  } else if (input === "clear" || input === "cls") {
+  }
+  //  else if (input == "cd repositories") {
+  //   printout(input)
+  //   setTimeout(function() {
+  //     open("/repositories/","_self");
+  //   }, delay);
+  // } 
+  else if (input === "clear" || input === "cls") {
     clearScreen();
   } else if (input === "history") {
     showHist();
