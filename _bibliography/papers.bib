@@ -8,12 +8,14 @@
 abbr={Clarify},
 author = {Mihir, Bafna and Hechen, Li and Xiuwei, Zhang},
 title= {CLARIFY: Cell-cell interaction and gene regulatory network refinement from spatially resolved transcriptomics},
-booktitle   = {the 31st Conference on Intelligent Systems for Molecular Biology (ISMB; in press at Bioinformatics)},
+booktitle   = {31st Conference on Intelligent Systems for Molecular Biology},
+shorttitle={ISMB; in press at Bioinformatics},
 year= {2023},
 website={https://www.iscb.org/ismbeccb2023-programme/proceedings},
 publisher = {Oxford University Press},
 selected={true},
-abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks. We evaluated 7 methods, including CellPhoneDB and DeepLinc, on 10 simulated datasets at 5 noise levels as well as 2 real datasets generated using SeqFISH and MerFISH. CellPhoneDB achieved an average precision/recall of 0.79/0.75 respectively, with the recall reducing to 0.65 for certain datasets. DeepLinc only achieved 0.68 prediction accuracy on SeqFISH data after being trained with labeled data. Additionally, the ROC curves were surprisingly linear, suggesting that increasing true positive rate comes only with increasing false positive rate. All other methods resulted in similar performance and the same pitfalls: failing to properly utilize either the spatial information or downstream gene regulatory interactions (GRN), thus increasing the false positive interactions. Our work provides, for the first time, a curated data resource for future tool comparisons and a systematic analysis of the shortcomings of existing methods. Lastly, to address these drawbacks, we deployed a preliminary version of a subgraph neural network, where we represent each cell by a subgraph of its underlying GRN, obtaining lower-dimensional representations of each cell with GRN information embedded. These embeddings incorporate gene expression, spatial information, and GRN activity thereby allowing us to refine ST-CCI inference. This has myriad applications like revealing interactions between co-located immune cells and tumor cells, addressing the central biological problem of why certain tumors are “immunologically hot” and respond better to immuno-oncotherapy.}
+appear={true},
+abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks.}
 }
 
 @inproceedings{ST-CCI,
@@ -21,6 +23,7 @@ abbr={ST-CCI},
 author = {Mihir, Bafna and Xiuwei, Zhang},
 title= {Benchmarking and Refining Cell-Cell Interactions with Spatial Transcriptomics and Deep Learning},
 booktitle   = {St. Jude National Symposium for Undergraduate Research},
+shorttitle={NSUR},
 year= {2022},
 publisher = {St. Jude (NSUR)},
 url       = {official link to the online version},
@@ -44,7 +47,8 @@ address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3535508.3545551},
 doi = {10.1145/3535508.3545551},
 abstract = {We consider the problem of identifying viral reads in human host genome data. We pose the problem as open-set classification as reads can originate from unknown sources such as bacterial and fungal genomes. Sequence-matching methods have low sensitivity in recognizing viral reads when the viral family is highly diverged. Hidden Markov models have higher sensitivity but require domain-specific training and are difficult to repurpose for identifying different viral families. Supervised learning methods can be trained with little domain-specific knowledge but have reduced sensitivity in open-set scenarios. We present DeepViFi, a transformer-based pipeline, to detect viral reads in short-read whole genome sequence data. At 90% precision, DeepViFi achieves 90% recall compared to 15% for other deep learning methods. DeepViFi provides a semi-supervised framework to learn representations of viral families without domain-specific knowledge, and rapidly and accurately identify target sequences in open-set settings.},
-booktitle = {Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics (ACM-BCB)},
+booktitle = {Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics},
+shorttitle= {ACM-BCB},
 articleno = {2},
 numpages = {8},
 keywords = {neural networks, viral detection, natural language processing, open-set classification},
@@ -54,14 +58,17 @@ selected= {true},
 pdf={https://dl.acm.org/doi/pdf/10.1145/3535508.3545551}
 }
 
-@misc{MetaDetect,
+@patent{MetaDetect,
   abbr={MetaDetect},
   bibtex_show={true},
   title={Computer-implemented methods for quantitation of features of interest in
-whole slide imaging. Provisional patent.},
+whole slide imaging},
   author={Nam, Nguyen and Lorena, Mora-Blanco and Kristen, Turner and Julie, Weise and  Jason, Christiansen and Mihir, Bafna},
   year={2021},
-  notes={Provisional patent},
+  number = {022308},
+  filing={Provisional patent. PCT/US2021/022308},
+  month={March},
+  notes= {filed March 15, 2021},
   selected={true},
   abs={}
 }

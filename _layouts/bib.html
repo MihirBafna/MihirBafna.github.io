@@ -74,7 +74,17 @@
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {% if entry.appear -%}
+              {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> (<b>{{entry.shorttitle}}</b>) {%- endcapture -%}
+            {%- else -%}
+              {% if entry.shorttitle -%}
+                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> (<b>{{entry.shorttitle}}</b>){%- endcapture -%}
+              {%- else -%}
+                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- elsif entry.type == "patent" -%}
+            {%- capture entrytype -%}<em>{{entry.filing}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
