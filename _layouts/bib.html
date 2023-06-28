@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
+        <div class="col-sm-2 abbr" >
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -10,9 +10,10 @@
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
-        <!-- {%- if entry.shorttitle -%}
-          <div class="award">{{entry.shorttitle}}</div>
-        {%- endif -%} -->
+        {%- if entry.shorttitle -%}
+            <br/>
+            <div class="badge award" style="box-shadow: none;">{{entry.short}}</div>
+        {%- endif -%}
         </div>
 
         <!-- Entry bib key -->
@@ -154,6 +155,9 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          {%- if entry.press %}
+          <a href="{{ entry.press }}" class="btn btn-sm z-depth-0" role="button">Press</a>
+        {%- endif %}
           </div>
 
           {% if entry.abstract -%}
