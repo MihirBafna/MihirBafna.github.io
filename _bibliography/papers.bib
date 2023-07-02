@@ -4,22 +4,28 @@
 @string{aps = {American Physical Society,}}
 
 
-@inproceedings{Clarify,
+@Article{Clarify,
 abbr={Clarify},
 author = {Mihir, Bafna and Hechen, Li and Xiuwei, Zhang},
 title= {CLARIFY: Cell-cell interaction and gene regulatory network refinement from spatially resolved transcriptomics},
 booktitle   = {31st Conference on Intelligent Systems for Molecular Biology},
-shorttitle={ISMB; in press at Bioinformatics},
 short={ISMB},
 year= {2023},
-website={https://www.iscb.org/ismbeccb2023-programme/proceedings},
+journal={Bioinformatics},
+Volume={39},
+Number={Supplement_1},
+Pages={i484-i493},
+Month={Jun},
+pdf={https://academic.oup.com/bioinformatics/article/39/Supplement_1/i484/7210503},
 press={https://www.cc.gatech.edu/news/award-winning-computer-models-propel-research-cellular-differentiation},
 code={https://github.com/MihirBafna/clarify#readme},
 publisher = {Oxford University Press},
-selected={true},
-appear={true},
-abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks.}
+  selected={true},
+  appear={true},
+  abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks.}
+
 }
+
 
 @inproceedings{ST-CCI,
 abbr={ST-CCI},

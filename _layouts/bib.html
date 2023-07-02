@@ -10,9 +10,9 @@
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
-        {%- if entry.shorttitle -%}
+        {%- if entry.short -%}
             <br/>
-            <div class="badge award" style="box-shadow: none;">{{entry.short}}</div>
+            <div class="badge award " style="box-shadow: none;">{{entry.short}}</div>
         {%- endif -%}
         </div>
 
@@ -77,12 +77,15 @@
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+            {% if entry.booktitle -%}
+              {%- capture entrytype -%}<em> {{entry.short}} and {{entry.journal}} </em>{%- endcapture -%}
+            {%- endif -%}
           {%- elsif entry.type == "inproceedings" -%}
             {% if entry.appear -%}
-              {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> (<b>{{entry.shorttitle}}</b>) {%- endcapture -%}
+              {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em> {%- endcapture -%}
             {%- else -%}
               {% if entry.shorttitle -%}
-                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> (<b>{{entry.shorttitle}}</b>){%- endcapture -%}
+                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em>{%- endcapture -%}
               {%- else -%}
                 {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
               {%- endif -%}
