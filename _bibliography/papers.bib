@@ -20,9 +20,10 @@ pdf={https://academic.oup.com/bioinformatics/article/39/Supplement_1/i484/721050
 press={https://www.cc.gatech.edu/news/award-winning-computer-models-propel-research-cellular-differentiation},
 code={https://github.com/MihirBafna/clarify#readme},
 publisher = {Oxford University Press},
-  selected={true},
-  appear={true},
-  abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks.}
+selected={true},
+appear={true},
+bibtex_show={true},
+abstract={Motivation: Gene regulatory networks (GRNs) in a cell provide the tight feedback needed to synchronize cell actions. However, genes in a cell also take input from, and provide signals to other neighboring cells. These cell-cell interactions (CCIs) and the GRNs deeply influence each other. Many computational methods have been developed for GRN inference in cells. More recently, methods were proposed to infer CCIs using single cell gene expression data with or without cell spatial location information. However, in reality, the two processes do not exist in isolation and are subject to spatial constraints. Despite this rationale, no methods currently exist to infer GRNs and CCIs using the same model. Results: We propose CLARIFY, a tool that takes GRNs as input, uses them and spatially resolved gene expression data to infer CCIs, while simultaneously outputs refined cell-specific GRNs. CLARIFY uses a novel multi-level graph autoencoder, which mimics cellular networks at a higher level and cell-specific GRNs at a deeper level. We applied CLARIFY to two real spatial transcriptomic datasets, one using seqFISH and the other using MERFISH, and also tested on simulated datasets from scMultiSim. We compared the quality of predicted GRNs and CCIs with state-of-the-art baseline methods that inferred either only GRNs or only CCIs. The results show that CLARIFY consistently outperforms the baseline in terms of commonly used evaluation metrics. Our results point to the importance of co-inference of CCIs and GRNs and to the use of layered graph neural networks as an inference tool for biological networks.}
 
 }
 
@@ -48,7 +49,6 @@ We evaluated 7 methods, including CellPhoneDB and DeepLinc, on 10 simulated data
 
 @inproceedings{DeepVifi,
 abbr={DeepVifi},
-bibtex_show={true},
 author = {Utkrisht, Rajkumar and Sara, Javadzadeh and Mihir, Bafna and Dongxia, Wu and Rose, Yu and Jingbo, Shang and Vineet, Bafna},
 title = {DeepViFi: Detecting Oncoviral Infections in Cancer Genomes Using Transformers},
 year = {2022},
@@ -68,7 +68,9 @@ location = {Northbrook, Illinois},
 series = {BCB '22},
 selected= {true},
 pdf={https://dl.acm.org/doi/pdf/10.1145/3535508.3545551},
-code={https://github.com/UCRajkumar/DeepViFi}
+code={https://github.com/UCRajkumar/DeepViFi},
+bibtex_show={true},
+
 }
 
 @patent{MetaDetect,
