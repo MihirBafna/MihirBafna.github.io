@@ -50,7 +50,7 @@ horizontal: false
 	<div class="direction-r" data-toggle="modal" data-target="#zhang">
 		<div class="flag-wrapper">
 			<span class="flag">GT Xiuwei Zhang Lab</span>
-			<span class="time-wrapper"><span class="time">2021 - present</span></span>
+			<span class="time-wrapper"><span class="time">2021 - 2023</span></span>
 		</div>
 		<div class="desc">
 			<b>Research Assistant</b> <br>
@@ -109,10 +109,10 @@ horizontal: false
 					<p>
 						<ul>
 						<li>Diffusion models for genome structure (via scHi-C imputation) and protein structure conformational change.</li>
-						<li>Accepted into the Broad Summer Research Program (BSRP) starting June</li>
+						<li>Continued work (June onwards) as part Broad Summer Research Program (BSRP) </li>
 						</ul>
 					</p>
-					<p><i class='fas fa-calendar'/> &nbsp;May 2023 - Present</p>
+					<p><i class='fas fa-calendar'/> &nbsp;May 2023 - Aug 2023</p>
 					<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Cambridge, MA </em> </p>
 				</div>
 			</div>
@@ -136,7 +136,7 @@ horizontal: false
 							<li>Applying Gaussian Processes to pair our model's predictions with an uncertainty score</li>
 							</ul>
 						</p>
-						<p><i class='fas fa-calendar'/> &nbsp;Dec 2021 - Present</p>
+						<p><i class='fas fa-calendar'/> &nbsp;Dec 2021 - Aug 2022</p>
 						<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Carnegie Mellon University, PA </em> </p>
 						<!-- <a href="#" class="btn">button</a> -->
 					</div>
@@ -164,7 +164,7 @@ horizontal: false
 							<li>Benchmarking current Spatial Transcriptomics + CCI methods</li>
 							</ul>
 						</p>
-						<p><i class='fas fa-calendar'/> &nbsp;Nov 2021 - Present</p>
+						<p><i class='fas fa-calendar'/> &nbsp;Nov 2021 - Dec 2023</p>
 						<p><i class='fas fa-map-marker-alt'></i> <em>&nbsp;Atlanta, GA </em> </p>
 					</div>
 				</div>
@@ -212,7 +212,7 @@ horizontal: false
 							<ul>
 							<li>GPA - 4.0/4.0</li>
 							<li>Specializing in Machine Learning/Theory</li>
-							<li>B.S. complete May 2023</li>
+							<li>Head TA for <a href="https://sites.cc.gatech.edu/classes/AY2024/cs7643_fall/">Graduate Deep Learning (CS 7643)</a> </li>
 							</ul>
 						</p>
 						<p><i class='fas fa-calendar'/> &nbsp;Aug 2020 - Dec 2023
