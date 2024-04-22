@@ -197,8 +197,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Mihir
-  first_name: Bafna
+  last_name: Bafna
+  first_name: Mihir
 
   style: apa
   locale: en
