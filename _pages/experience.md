@@ -19,6 +19,31 @@ horizontal: false
 <ul class="timeline">
 <!-- Item 1 -->
 <li>
+	<div class="direction-l" data-toggle="modal" data-target="#liquid">
+		<div class="flag-wrapper">
+			<span class="flag">Liquid AI</span>
+			<span class="time-wrapper"><span class="time">2024-present</span></span>
+		</div>
+		<div class="desc">
+			<b>Machine Learning Researcher</b> <br>
+			Protein language modeling <br>
+		</div>
+	</div>
+</li>
+<li>
+	<div class="direction-r" data-toggle="modal" data-target="#mitphd">
+		<div class="flag-wrapper">
+			<span class="flag">MIT</span>
+			<span class="time-wrapper"><span class="time">2024</span></span>
+		</div>
+		<div class="desc">
+			<b>PhD student</b> <br>
+			Deep learning for proteins<br>
+		</div>
+	</div>
+</li>
+
+<li>
 	<div class="direction-l" data-toggle="modal" data-target="#mit">
 		<div class="flag-wrapper">
 			<span class="flag">MIT Bonnie Berger Lab</span>
@@ -47,7 +72,7 @@ horizontal: false
 
 <!-- Item 2 -->
 <li>
-	<div class="direction-r" data-toggle="modal" data-target="#zhang">
+	<div class="direction-l" data-toggle="modal" data-target="#zhang">
 		<div class="flag-wrapper">
 			<span class="flag">GT Xiuwei Zhang Lab</span>
 			<span class="time-wrapper"><span class="time">2021 - 2023</span></span>
