@@ -8,6 +8,16 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.3rem;
+}
+h3, h4, h5, h6, div, p {
+  font-size: 0.875rem;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -238,7 +248,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 2.5rem;
+    font-size: 2rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -439,7 +449,7 @@ footer.sticky-bottom {
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -447,7 +457,7 @@ footer.sticky-bottom {
   h2 {
     margin-bottom: 1rem;
     span {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
   h2.year {

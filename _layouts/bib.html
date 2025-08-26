@@ -85,7 +85,7 @@
               {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em> {%- endcapture -%}
             {%- else -%}
               {% if entry.shorttitle -%}
-                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em>{%- endcapture -%}
+                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <em>({{entry`.shorttitle}})</em>{%- endcapture -%}
               {%- else -%}
                 {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
               {%- endif -%}

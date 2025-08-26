@@ -5,6 +5,8 @@ layout: default
       <div class="post">
 
         <header class="post-header">
+          <br/>
+          <br/>
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
@@ -28,9 +30,10 @@ layout: default
             </div>
             {%- endif %}
           </div> -->
-          <div class="profile float-right" style="padding-left:50px; width:45%; height:100%;">
+          <div class="profile float-right" style="padding-left:70px; width:45%; height:100%;">
               <div class="computer-container">
-                <div class="computer-monitor" onclick="window.open('/terminal/', '_self')">
+                <div class="computer-monitor">
+                <!-- <div class="computer-monitor" onclick="window.open('/terminal/', '_self')"> -->
                   <!-- <div class="loader" style="z-index: 4; padding-top:15vh; padding-left:2vw;"> -->
                   <div class="dna-container">
                     <div class="loader" style="z-index: 4;">
@@ -77,12 +80,15 @@ layout: default
             {{ content }}
             {%- if page.social %}
           <!-- Social -->
-          <h2>   </h2>
+          <!-- <h2>   </h2> -->
+
+          <br/>
+
           <div class="social">
             <div class="contact-icons">
             {% include social.html %}
             </div>
-  
+
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
@@ -98,6 +104,11 @@ layout: default
           {%- endif %}
           {% if page.selected_papers -%}
             <!-- Selected papers -->
+             <br/>
+            <br/>
+
+             <br/>
+
             {%- include selected_papers.html %}
           {%- endif %}
         </article>
