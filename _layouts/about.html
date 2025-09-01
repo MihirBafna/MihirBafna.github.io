@@ -5,13 +5,16 @@ layout: default
       <div class="post">
 
         <header class="post-header">
-          <br/>
+                 <br/>
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-          
+          <!-- <div class="post-description"> -->
+            <p >{{ page.subtitle }}</p>
+          <!-- </div> -->
         </header>
+  
+          
 
         <article>
           <!-- {% if page.profile -%}
@@ -29,7 +32,7 @@ layout: default
             </div>
             {%- endif %}
           </div> -->
-          <div class="profile float-right" style="padding-left:70px; width:45%; height:100%;">
+          <div class="profile float-right" style="padding-left:50px; width:45%; height:100%;">
               <div class="computer-container">
                 <div class="computer-monitor">
                 <!-- <div class="computer-monitor" onclick="window.open('/terminal/', '_self')"> -->
@@ -82,17 +85,8 @@ layout: default
           <!-- <h2>   </h2> -->
 
           <br/>
-
-          <div class="social">
-            <div class="contact-icons">
-            {% include social.html %}
-            </div>
-
-            <div class="contact-note">
-              {{ site.contact_note }}
-            </div>
-            
-          </div>
+          <br/>
+         
           {%- endif %}
           </div>
           {%- endif %}
@@ -103,7 +97,16 @@ layout: default
           {%- endif %}
           {% if page.selected_papers -%}
             <!-- Selected papers -->
-             <br/>
+              <div class="social">
+            <div class="contact-icons">
+            {% include social.html %}
+            </div>
+
+            <div class="contact-note">
+              {{ site.contact_note }}
+            </div>
+            
+          </div>
             <br/>
 
              <br/>

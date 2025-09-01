@@ -4,16 +4,17 @@
       <div class="row">
         <div class="col-sm-2 abbr" >
         {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
+          <!-- {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
           <abbr class="badge">{{entry.abbr}}</abbr>
-          {%- endif -%}
+          {%- endif -%} -->
+          <abbr class="badge">{{entry.short}}</abbr>
         {%- endif -%}
-        {%- if entry.short -%}
+        <!-- {%- if entry.short -%}
             <br/>
             <div class="badge award " style="box-shadow: none;">{{entry.short}}</div>
-        {%- endif -%}
+        {%- endif -%} -->
         </div>
 
         <!-- Entry bib key -->
@@ -76,22 +77,22 @@
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
-            {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+            {%- capture entrytype -%}{{entry.journal}}{%- endcapture -%}
             {% if entry.booktitle -%}
-              {%- capture entrytype -%}<em> {{entry.short}} and {{entry.journal}} </em>{%- endcapture -%}
+              {%- capture entrytype -%}{{entry.short}} and {{entry.journal}}{%- endcapture -%}
             {%- endif -%}
           {%- elsif entry.type == "inproceedings" -%}
             {% if entry.appear -%}
               {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em> {%- endcapture -%}
             {%- else -%}
               {% if entry.shorttitle -%}
-                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <em>({{entry`.shorttitle}})</em>{%- endcapture -%}
+                {%- capture entrytype -%}{{entry`.shorttitle}}{%- endcapture -%}
               {%- else -%}
                 {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
               {%- endif -%}
             {%- endif -%}
           {%- elsif entry.type == "patent" -%}
-            {%- capture entrytype -%}<em>{{entry.filing}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}{{entry.filing}}{%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
