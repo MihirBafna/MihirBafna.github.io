@@ -3,7 +3,7 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 abbr" >
-        {%- if entry.abbr -%}
+        {%- if entry.short -%}
           <!-- {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
@@ -85,11 +85,11 @@
             {% if entry.appear -%}
               {%- capture entrytype -%}<em>To appear in {{entry.booktitle}}</em> <em>({{entry.shorttitle}})</em> {%- endcapture -%}
             {%- else -%}
-              {% if entry.shorttitle -%}
-                {%- capture entrytype -%}{{entry`.shorttitle}}{%- endcapture -%}
-              {%- else -%}
-                {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
-              {%- endif -%}
+              <!-- {% if entry.shorttitle -%} -->
+              {%- capture entrytype -%}{{entry`.booktitle}}{%- endcapture -%}
+              <!-- {%- else -%} -->
+                <!-- {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%} -->
+              <!-- {%- endif -%} -->
             {%- endif -%}
           {%- elsif entry.type == "patent" -%}
             {%- capture entrytype -%}{{entry.filing}}{%- endcapture -%}

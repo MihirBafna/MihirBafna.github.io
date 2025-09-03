@@ -3,6 +3,40 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{bafna2025learningresiduelevelprotein,
+      title={Learning residue level protein dynamics with multiscale Gaussians}, 
+      author={Mihir Bafna and Bowen Jing and Bonnie Berger},
+      Month={Sep},
+      year={2025},
+      eprint={2509.01038},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.BM},
+      url={https://arxiv.org/abs/2509.01038}, 
+      journal={arxiv},
+      short={arxiv},
+      shorttitle={arxiv},
+      abstract={Many methods have been developed to predict static protein structures, however understanding the dynamics of protein structure is essential for elucidating biological function. While molecular dynamics (MD) simulations remain the in silico gold standard, its high computational cost limits scalability. We present DynaProt, a lightweight, SE(3)-invariant framework that predicts rich descriptors of protein dynamics directly from static structures. By casting the problem through the lens of multivariate Gaussians, DynaProt estimates dynamics at two complementary scales: (1) per-residue marginal anisotropy as 3×3 covariance matrices capturing local flexibility, and (2) joint scalar covariances encoding pairwise dynamic coupling across residues. From these dynamics outputs, DynaProt achieves high accuracy in predicting residue-level flexibility (RMSF) and, remarkably, enables reasonable reconstruction of the full covariance matrix for fast ensemble generation. Notably, it does so using orders of magnitude fewer parameters than prior methods. Our results highlight the potential of direct protein dynamics prediction as a scalable alternative to existing methods.},
+      arxiv={2509.01038},
+      bibtex_show={true},
+      selected={true},
+}
+
+@article{gujral2025sparse,
+  title={Sparse autoencoders uncover biologically interpretable features in protein language model representations},
+  author={Gujral, Onkar and Bafna, Mihir and Alm, Eric and Berger, Bonnie},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={122},
+  number={34},
+  pages={e2506316122},
+  year={2025},
+  publisher={National Academy of Sciences},
+  short={PNAS},
+  shorttitle={PNAS},
+  abstract={Foundation models in biology—particularly protein language models (PLMs)—have enabled ground-breaking predictions in protein structure, function, and beyond. However, the “black-box” nature of these representations limits transparency and explainability, posing challenges for human–AI collaboration and leaving open questions about their human-interpretable features. Here, we leverage sparse autoencoders (SAEs) and a variant, transcoders, from natural language processing to extract, in a completely unsupervised fashion, interpretable sparse features present in both protein-level and amino acid (AA)-level representations from ESM2, a popular PLM. Unlike other approaches such as training probes for features, the extraction of features by the SAE is performed without any supervision. We find that many sparse features extracted from SAEs trained on protein-level representations are tightly associated with Gene Ontology (GO) terms across all levels of the GO hierarchy. We also use Anthropic’s Claude to automate the interpretation of sparse features for both protein-level and AA-level representations and find that many of these features correspond to specific protein families and functions such as the NAD Kinase, IUNH, and the PTH family, as well as proteins involved in methyltransferase activity and in olfactory and gustatory sensory perception. We show that sparse features are more interpretable than ESM2 neurons across all our trained SAEs and transcoders. These findings demonstrate that SAEs offer a promising unsupervised approach for disentangling biologically relevant information present in PLM representations, thus aiding interpretability. This work opens the door to safety, trust, and explainability of PLMs and their applications, and paves the way to extracting meaningful biological insights across increasingly powerful models in the life sciences.},
+  bibtex_show={true},
+  pdf={https://www.pnas.org/doi/10.1073/pnas.2506316122},
+  selected={true}
+}
 
 @article{Zhang2020.11.26.400739,
   abbr={DANGO},
@@ -10,7 +44,7 @@
   author = {Zhang, Ruochi and Bafna, Mihir and Ma, Jianzhu and Ma, Jian},
   Month={Jan},
   year = {2025},
-  journal = {bioRxiv},
+  journal = {biorxiv},
   biorxiv={10.1101/2020.11.26.400739v2},
   url={https://www.biorxiv.org/content/early/2025/01/13/2020.11.26.400739.full.pdf},
   pdf = {https://www.biorxiv.org/content/early/2025/01/13/2020.11.26.400739.full.pdf},
@@ -19,8 +53,9 @@
   selected={true},
   abstract = {Higher-order genetic interactions, which have profound implications for understanding the molecular mechanisms of phenotypic variation, remain poorly characterized. Most studies to date have focused on pairwise interactions, as designing high-throughput experimental screenings for the vast combinatorial search space of higher-order molecular interactions is dauntingly challenging. Here, we develop DANGO, a computational method based on a self-attention hypergraph neural network, designed to effectively predict higher-order genetic interaction among groups of genes. As a proof-of-concept, we provide comprehensive predictions for over 400 million trigenic interactions in the yeast S. cerevisiae, significantly expanding the quantitative characterization of such interactions. Our results demonstrate that DANGO accurately predicts trigenic interactions, uncovering both known and novel biological functions related to cell growth. We further incorporate protein embeddings and model uncertainty scoring to enhance the biological relevance and interpretability of the predicted interactions. Moreover, the predicted interactions can serve as powerful genetic markers for growth response under diverse conditions. Together, DANGO enables a more complete map of complex genetic interactions that impinge upon phenotypic diversity.Competing Interest StatementThe authors have declared no competing interest.},
   elocation-id = {2020.11.26.400739},
-  short={bioRxiv},
-  shorttitle={bioRxiv}
+  short={biorxiv},
+  shorttitle={biorxiv},
+  bibtex_show={true},
 }
 
 
